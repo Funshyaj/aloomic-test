@@ -1,3 +1,17 @@
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height:100px;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+  }
+  .stick{display:flex;
+  height:500px}
+
+
+
 .industry{
     display: block;}
 
@@ -14,7 +28,7 @@ line-height: 2.5;
     border: 1px dashed green;
     padding: 30px 24px 30px;
     transform: translateY(150px);
-    margin: 40px 0px 50px;
+    margin: 70px 0px 80px;
     opacity: 0.1;
     transition: 2s all ease;
   }
@@ -47,13 +61,12 @@ line-height: 2.5;
         top: 120px;
        height: 400px;
         width: 50%;
-        padding-right: 150px;
+        padding-right: 80px;
        
     }
 
     .industry-head-text > p{
-        padding-left: 52px;
-        font-size: 24px;
+      
         line-height: 1.5;
     }
 
@@ -75,4 +88,19 @@ margin: 0 auto ;
     }
     
     
+  }
+
+  @media screen and (min-width:1024px){
+    .industry-head-text > p{
+        padding-left: 38px;
+        line-height: 1.5;
+    }
+    
+
+
+    .industry-head-text{
+        padding-right: 150px;
+       
+    }
+
   }
