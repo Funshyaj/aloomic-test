@@ -1,0 +1,78 @@
+.industry{
+    display: block;}
+
+
+.industry-head-text > p{
+    text-align: left;
+    padding-left: 22px;
+}
+
+.industry-content-box{  
+   min-height: 300px;
+   height:auto;
+line-height: 2.5;
+    border: 1px dashed green;
+    padding: 30px 24px 30px;
+    transform: translateY(150px);
+    margin: 40px 0px 50px;
+    opacity: 0.1;
+    transition: 2s all ease;
+  }
+
+  .industry-content-box > h2{
+    font-size: 7.5vw;
+}
+
+.industry-content-box > ul{
+    font-size: 5.5vw;
+}
+
+  .industry-content-box.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+ /* mobile first reponsiveness */
+  /* Tablet and above */
+  @media screen and (min-width:768px){
+    .industry{
+        display: flex;
+    height: 2000px;
+    }
+
+    .industry-head-text{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 120px;
+       height: 400px;
+        width: 50%;
+        padding-right: 150px;
+       
+    }
+
+    .industry-head-text > p{
+        padding-left: 52px;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .industry-content-box-container{
+width: 50%;
+margin: 0 auto ;
+    }
+    .industry-content-box{
+        width: 100%;
+        height: auto;
+        min-height: 400px;}
+
+    .industry-content-box > h2{
+        font-size: 3.5vw;
+    }
+
+    .industry-content-box > ul{
+        font-size: 2.5vw;
+    }
+    
+    
+  }
